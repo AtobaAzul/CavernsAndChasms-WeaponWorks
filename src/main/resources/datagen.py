@@ -34,31 +34,33 @@ recipe_dict = {
     "spear": ["  A", " B ", "B  "],
 }
 
+item_names = []
+
 # Tags
 with open(
     "data/caverns_and_chasms/tags/items/experience_boost_items.json", "w"
 ) as file:
-    data = {"values": []}
+    lang = {"values": []}
     for type in types:
-        data["values"].append("moonsweaponry:golden_" + type)
-    json.dump(data, file, indent=4)
+        lang["values"].append("moonsweaponry:golden_" + type)
+    json.dump(lang, file, indent=4)
     file.close()
 
 with open("data/caverns_and_chasms/tags/items/magic_damage_items.json", "w") as file:
-    data = {"values": []}
+    lang = {"values": []}
     for type in types:
-        data["values"].append("ccww:silver_" + type)
-    json.dump(data, file, indent=4)
+        lang["values"].append("ccww:silver_" + type)
+    json.dump(lang, file, indent=4)
     file.close()
 
 with open(
     "data/caverns_and_chasms/tags/items/slowness_inflicting_items.json", "w"
 ) as file:
-    data = {"values": []}
+    lang = {"values": []}
 
     for type in types:
-        data["values"].append("ccww:necromium_" + type)
-    json.dump(data, file, indent=4)
+        lang["values"].append("ccww:necromium_" + type)
+    json.dump(lang, file, indent=4)
     file.close()
 
 
@@ -66,6 +68,7 @@ for type in types:
     # Model data
     for material in materials:
         item_name = f"{material}_{type}".format(type=type, material=material)
+        item_names.append(item_name)
 
         # Copper waxed variants
         if "copper" in material:
@@ -73,10 +76,10 @@ for type in types:
             with open(
                 "assets/ccww/models/item/waxed_" + item_name + ".json", "w"
             ) as file:
-                data = {
+                lang = {
                     "parent": "ccww:item/" + item_name,
                 }
-                json.dump(data, file, indent=4)
+                json.dump(lang, file, indent=4)
                 file.close()
 
         model_file = open("assets/ccww/models/item/" + item_name + ".json", "w")
@@ -119,6 +122,10 @@ for type in types:
             base=("netherite" if material == "necromium" else "iron"),
             type=type,
         )
+
+        if "copper" in material:
+            model_data = model_data.replace("moonsweaponry:item/iron_hammer_handheld", "ccww:item/copper_hammer_handheld")
+
         model_file.writelines(model_data)
         print("Created model file for: " + item_name)
         model_file.close()
@@ -155,7 +162,14 @@ for type in types:
                 },
                 "result": {"item": "ccww:" + item_name},
             }
-
+            print("Created recipe for: " + item_name)
             json.dump(recipe, file, indent=4)
             file.close()
 
+## Lang files.
+lang = {}
+_file = open("assets/ccww/lang/en_us.json", "w")
+for name in item_names:
+    lang["item.ccww."+name] = name.replace("_", " ").title()
+json.dump(lang, _file, indent=4)
+_file.close()

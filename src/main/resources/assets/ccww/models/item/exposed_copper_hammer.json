@@ -5,7 +5,7 @@
     "layer0": "ccww:item/exposed_copper_hammer"
   },
   "base": {
-    "parent": "moonsweaponry:item/iron_hammer_handheld",
+    "parent": "ccww:item/copper_hammer_handheld",
     "textures": {
         "layer0": "ccww:item/exposed_copper_hammer_handheld"
     }
