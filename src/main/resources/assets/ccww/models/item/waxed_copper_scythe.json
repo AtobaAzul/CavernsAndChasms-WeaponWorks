@@ -1,3 +1,33 @@
 {
-    "parent": "ccww:item/copper_scythe"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/copper_scythe"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_scythe_handheld",
+    "textures": {
+        "layer0": "ccww:item/copper_scythe_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_scythe"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_scythe"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_scythe"
+        }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  A",
+        " BA",
+        "B  "
+    ],
+    "key": {
+        "B": {
+            "tag": "forge:rods/wooden"
+        },
+        "A": {
+            "item": "minecraft:waxed_exposed_copper"
+        }
+    },
+    "result": {
+        "item": "ccww:waxed_exposed_copper_halberd"
+    }
+}

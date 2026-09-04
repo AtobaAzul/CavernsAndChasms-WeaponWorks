@@ -1,3 +1,33 @@
 {
-    "parent": "ccww:item/exposed_copper_mace"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/exposed_copper_mace"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_mace_handheld",
+    "textures": {
+        "layer0": "ccww:item/exposed_copper_mace_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_mace_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_mace"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_mace_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_mace"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_mace_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_mace"
+        }
+    }
+  }
 }

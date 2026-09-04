@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  A",
+        " BA",
+        "B  "
+    ],
+    "key": {
+        "B": {
+            "tag": "forge:rods/wooden"
+        },
+        "A": {
+            "tag": "forge:ingots/silver"
+        }
+    },
+    "result": {
+        "item": "ccww:silver_halberd"
+    }
+}

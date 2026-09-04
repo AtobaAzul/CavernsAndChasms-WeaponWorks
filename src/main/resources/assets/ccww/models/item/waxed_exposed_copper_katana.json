@@ -1,3 +1,33 @@
 {
-    "parent": "ccww:item/exposed_copper_katana"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/exposed_copper_katana"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_katana_handheld",
+    "textures": {
+        "layer0": "ccww:item/exposed_copper_katana_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_katana"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_katana"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/exposed_copper_katana"
+        }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " AA",
+        " BA",
+        "B  "
+    ],
+    "key": {
+        "B": {
+            "tag": "forge:rods/wooden"
+        },
+        "A": {
+            "item": "minecraft:waxed_weathered_copper"
+        }
+    },
+    "result": {
+        "item": "ccww:waxed_weathered_copper_hammer"
+    }
+}

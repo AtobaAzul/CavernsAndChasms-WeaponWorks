@@ -1,3 +1,33 @@
 {
-    "parent": "ccww:item/weathered_copper_hammer"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/weathered_copper_hammer"
+  },
+  "base": {
+    "parent": "ccww:item/copper_hammer_handheld",
+    "textures": {
+        "layer0": "ccww:item/weathered_copper_hammer_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_hammer"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_hammer"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_hammer"
+        }
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "moonsweaponry:diamond_halberd"
+    },
+    "addition": {
+        "item": "caverns_and_chasms:necromium_ingot"
+    },
+    "result": {
+        "item": "ccww:necromium_halberd"
+    }
+}

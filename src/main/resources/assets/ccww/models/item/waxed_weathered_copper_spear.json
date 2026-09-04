@@ -1,3 +1,33 @@
 {
-    "parent": "ccww:item/weathered_copper_spear"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/weathered_copper_spear"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_spear_handheld",
+    "textures": {
+        "layer0": "ccww:item/weathered_copper_spear_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_spear"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_spear"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/weathered_copper_spear"
+        }
+    }
+  }
 }

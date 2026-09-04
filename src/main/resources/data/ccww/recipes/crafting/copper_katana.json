@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  A",
+        " A ",
+        "B  "
+    ],
+    "key": {
+        "B": {
+            "tag": "forge:rods/wooden"
+        },
+        "A": {
+            "item": "minecraft:copper_block"
+        }
+    },
+    "result": {
+        "item": "ccww:copper_katana"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "moonsweaponry:diamond_warglaive"
+    },
+    "addition": {
+        "item": "caverns_and_chasms:necromium_ingot"
+    },
+    "result": {
+        "item": "ccww:necromium_warglaive"
+    }
+}
