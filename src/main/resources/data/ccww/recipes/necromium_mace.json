@@ -1,19 +1,15 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " A ",
-        "ABA",
-        " B "
-    ],
-    "key": {
-        "A": {
-            "tag": "forge:ingots/necromium"
-        },
-        "B": {
-            "tag": "forge:rods/wooden"
-        }
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "tag": "forge:ingots/necromium"
+    },
+    "base": {
+        "item": "moonsweaponry:diamond_mace"
     },
     "result": {
         "item": "ccww:necromium_mace"
+    },
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
     }
 }

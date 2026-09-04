@@ -124,7 +124,10 @@ for type in types:
         )
 
         if "copper" in material:
-            model_data = model_data.replace("moonsweaponry:item/iron_hammer_handheld", "ccww:item/copper_hammer_handheld")
+            model_data = model_data.replace(
+                "moonsweaponry:item/iron_hammer_handheld",
+                "ccww:item/copper_hammer_handheld",
+            )
 
         model_file.writelines(model_data)
         print("Created model file for: " + item_name)
@@ -145,31 +148,46 @@ for type in types:
         # recipes
         with open("data/ccww/recipes/" + item_name + ".json", "w") as file:
             crafting_material = ...
+            if material != "necromium":
+                if material == "copper":
+                    crafting_material = "forge:storage_blocks/" + material
+                elif "_" in material:
+                    crafting_material = "forge:storage_blocks/" + material.replace(
+                        "block", ""
+                    )
+                else:
+                    crafting_material = "forge:ingots/" + material
 
-            if material =="copper": 
-                crafting_material = "forge:storage_blocks/" + material
-            elif "_" in material:
-                crafting_material = "forge:storage_blocks/" + material.replace("block", "")
+                recipe = {
+                    "type": "minecraft:crafting_shaped",
+                    "pattern": recipe_dict[type],
+                    "key": {
+                        "A": {"tag": crafting_material},
+                        "B": {"tag": "forge:rods/wooden"},
+                    },
+                    "result": {"item": "ccww:" + item_name},
+                }
+                print("Created recipe for: " + item_name)
+                json.dump(recipe, file, indent=4)
+                file.close()
             else:
-                crafting_material = "forge:ingots/" + material
-            
-            recipe = {
-                "type": "minecraft:crafting_shaped",
-                "pattern": recipe_dict[type],
-                "key": {
-                    "A": {"tag": crafting_material},
-                    "B": {"tag": "forge:rods/wooden"},
-                },
-                "result": {"item": "ccww:" + item_name},
-            }
-            print("Created recipe for: " + item_name)
-            json.dump(recipe, file, indent=4)
-            file.close()
+                recipe = {
+                    "type": "minecraft:smithing_transform",
+                    "addition": {"tag": "forge:ingots/necromium"},
+                    "base": {"item": "moonsweaponry:diamond_"+type},
+                    "result": {"item": "ccww:" + item_name},
+                    "template": {
+                        "item": "minecraft:netherite_upgrade_smithing_template"
+                    },
+                }
+                print("Created recipe for: " + item_name)
+                json.dump(recipe, file, indent=4)
+                file.close()
 
 ## Lang files.
 lang = {}
 _file = open("assets/ccww/lang/en_us.json", "w")
 for name in item_names:
-    lang["item.ccww."+name] = name.replace("_", " ").title()
+    lang["item.ccww." + name] = name.replace("_", " ").title()
 json.dump(lang, _file, indent=4)
 _file.close()
