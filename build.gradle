@@ -214,6 +214,11 @@ dependencies {
         jarJar.pin(it, "$mixinsquared_version")
     }
 
+    //better combat
+    implementation fg.deobf("curse.maven:cloth-config-348521:5729105")
+    implementation fg.deobf("curse.maven:playeranimator-658587:4587214")
+    implementation fg.deobf("curse.maven:better-combat-by-daedelus-639842:7287334")
+
 
 }
 
