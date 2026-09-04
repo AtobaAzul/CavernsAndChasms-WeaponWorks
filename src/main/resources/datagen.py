@@ -64,11 +64,11 @@ for type in types:
     slowness_items.append("ccww:necromium_" + type)
 
 create_item_tag(
-    "caverns_and_chasms:experience_boost_items", ["moonsweaponry:golden_" + type]
+    "caverns_and_chasms:experience_boost_items", exp_boost_items
 )
-create_item_tag("caverns_and_chasms:magic_damage_items", ["ccww:silver_" + type])
+create_item_tag("caverns_and_chasms:magic_damage_items", magic_dmg_items)
 create_item_tag(
-    "caverns_and_chasms:slowness_inflicting_items", ["ccww:necromium_" + type]
+    "caverns_and_chasms:slowness_inflicting_items", slowness_items
 )
 
 ########## Models
