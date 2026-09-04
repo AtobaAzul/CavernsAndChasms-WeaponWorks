@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " AA",
+        " BA",
+        "B A"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/copper"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:copper_scythe"
+    }
+}

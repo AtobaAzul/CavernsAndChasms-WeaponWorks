@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_spear"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_spear_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_spear_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_spear"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_spear"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_spear_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_spear"
+        }
+    }
+  }
+}

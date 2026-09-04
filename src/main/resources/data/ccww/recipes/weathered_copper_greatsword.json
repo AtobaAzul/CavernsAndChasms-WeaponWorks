@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        " A ",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/weathered_copper"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:weathered_copper_greatsword"
+    }
+}

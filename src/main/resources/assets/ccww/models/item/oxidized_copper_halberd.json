@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/oxidized_copper_halberd"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_halberd_handheld",
+    "textures": {
+        "layer0": "ccww:item/oxidized_copper_halberd_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_halberd"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_halberd"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_halberd"
+        }
+    }
+  }
+}

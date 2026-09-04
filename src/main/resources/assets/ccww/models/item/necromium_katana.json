@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_katana"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_katana_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_katana_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_katana"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_katana"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_katana_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_katana"
+        }
+    }
+  }
+}

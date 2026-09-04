@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  A",
+        " A ",
+        "B  "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:waxed_oxidized_copper_block"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:waxed_oxidized_copper_katana"
+    }
+}

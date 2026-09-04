@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_warglaive"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_warglaive_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_warglaive_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_warglaive"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_warglaive"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_warglaive"
+        }
+    }
+  }
+}

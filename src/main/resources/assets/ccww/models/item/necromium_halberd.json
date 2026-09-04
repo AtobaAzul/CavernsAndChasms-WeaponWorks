@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_halberd"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_halberd_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_halberd_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_halberd"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_halberd"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_halberd_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_halberd"
+        }
+    }
+  }
+}

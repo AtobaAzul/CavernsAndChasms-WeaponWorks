@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_scythe"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_scythe_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_scythe_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_scythe"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_scythe"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_scythe_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_scythe"
+        }
+    }
+  }
+}

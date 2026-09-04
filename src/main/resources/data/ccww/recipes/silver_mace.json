@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:ingots/silver"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:silver_mace"
+    }
+}

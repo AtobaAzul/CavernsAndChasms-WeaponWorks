@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/copper_warglaive"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_warglaive_handheld",
+    "textures": {
+        "layer0": "ccww:item/copper_warglaive_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_warglaive"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_warglaive"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_warglaive_gui",
+      "textures": {
+          "layer0": "ccww:item/copper_warglaive"
+        }
+    }
+  }
+}

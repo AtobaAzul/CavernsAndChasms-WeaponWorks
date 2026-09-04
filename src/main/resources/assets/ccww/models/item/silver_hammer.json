@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/silver_hammer"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_hammer_handheld",
+    "textures": {
+        "layer0": "ccww:item/silver_hammer_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/silver_hammer"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/silver_hammer"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_hammer_gui",
+      "textures": {
+          "layer0": "ccww:item/silver_hammer"
+        }
+    }
+  }
+}

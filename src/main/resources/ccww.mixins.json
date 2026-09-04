@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.atobaazul.cavernsandchasmsww.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "plugin": "net.atobaazul.cavernsandchasmsww.mixin.CCWWMixinPlugin",
+  "refmap": "ccww.refmap.json",
+  "mixins": [
+    "WeatheringCopperItemMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixinextras": {
+    "minVersion": "$mixinextras_version"
+  }
+}

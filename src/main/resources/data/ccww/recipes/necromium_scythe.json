@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " AA",
+        " BA",
+        "B A"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:ingots/necromium"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:necromium_scythe"
+    }
+}

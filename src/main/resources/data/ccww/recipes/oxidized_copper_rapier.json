@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/oxidized_copper"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:oxidized_copper_rapier"
+    }
+}

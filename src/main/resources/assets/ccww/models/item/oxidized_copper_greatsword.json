@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/oxidized_copper_greatsword"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/iron_greatsword_handheld",
+    "textures": {
+        "layer0": "ccww:item/oxidized_copper_greatsword_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/iron_greatsword_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_greatsword"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/iron_greatsword_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_greatsword"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/iron_greatsword_gui",
+      "textures": {
+          "layer0": "ccww:item/oxidized_copper_greatsword"
+        }
+    }
+  }
+}

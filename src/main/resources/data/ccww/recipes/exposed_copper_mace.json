@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/exposed_copper"
+        },
+        "B": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "ccww:exposed_copper_mace"
+    }
+}

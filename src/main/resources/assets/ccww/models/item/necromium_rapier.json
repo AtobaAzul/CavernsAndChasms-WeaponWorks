@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "ccww:item/necromium_rapier"
+  },
+  "base": {
+    "parent": "moonsweaponry:item/netherite_rapier_handheld",
+    "textures": {
+        "layer0": "ccww:item/necromium_rapier_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "moonsweaponry:item/netherite_rapier_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_rapier"
+        }
+    },
+    "fixed": {
+      "parent": "moonsweaponry:item/netherite_rapier_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_rapier"
+        }
+    },
+    "ground": {
+      "parent": "moonsweaponry:item/netherite_rapier_gui",
+      "textures": {
+          "layer0": "ccww:item/necromium_rapier"
+        }
+    }
+  }
+}
