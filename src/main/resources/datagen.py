@@ -208,6 +208,7 @@ for type in types:
         create_weapon_attributes(type, material)
         # Recipes
         if "copper" in material:
+            create_weapon_attributes(type, "waxed_" + material)
             create_weapon_shaped_recipe(
                 type,
                 material,
