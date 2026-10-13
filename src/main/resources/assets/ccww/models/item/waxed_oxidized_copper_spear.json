@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/oxidized_copper_spear"
+    "layer0": "ccww:item/oxidized_copper_spear",
+    "particle": "ccww:item/oxidized_copper_spear"
   },
   "base": {
     "parent": "moonsweaponry:item/iron_spear_handheld",

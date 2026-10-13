@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_spear"
+    "layer0": "ccww:item/necromium_spear",
+    "particle": "ccww:item/necromium_spear"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_spear_handheld",

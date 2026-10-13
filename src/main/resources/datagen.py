@@ -77,7 +77,8 @@ model_data_str = """{{
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {{
-    "layer0": "ccww:item/{item_name}"
+    "layer0": "ccww:item/{item_name}",
+    "particle": "ccww:item/{item_name}"
   }},
   "base": {{
     "parent": "moonsweaponry:item/{base}_{type}_handheld",
@@ -107,15 +108,52 @@ model_data_str = """{{
   }}
 }}"""
 
+hammer_model_data_str = """{{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {{
+    "layer0": "ccww:item/{item_name}",
+    "particle": "ccww:item/{item_name}"
+  }},
+  "base": {{
+    "parent": "moonsweaponry:item/{base}_{type}_handheld",
+    "textures": {{
+        "0": "ccww:item/{item_name}_handheld"
+    }}
+  }},
+  "perspectives": {{
+    "gui": {{
+      "parent": "moonsweaponry:item/{base}_{type}_gui",
+      "textures": {{
+          "layer0": "ccww:item/{item_name}"
+        }}
+    }},
+    "fixed": {{
+      "parent": "moonsweaponry:item/{base}_{type}_gui",
+      "textures": {{
+          "layer0": "ccww:item/{item_name}"
+        }}
+    }},
+    "ground": {{
+      "parent": "moonsweaponry:item/{base}_{type}_gui",
+      "textures": {{
+          "layer0": "ccww:item/{item_name}"
+        }}
+    }}
+  }}
+}}"""
+
 
 def create_weapon_model_data(type: str, material: str):
     item_name = f"{material}_{type}".format(type=type, material=material)
     item_names.append(item_name)
 
+    _model_data_str = (hammer_model_data_str if type == "hammer" else model_data_str)
+
     # Copper waxed variants
     if "copper" in material:
         model_file = open("assets/ccww/models/item/waxed_" + item_name + ".json", "w")
-        model_data = model_data_str.format(
+        model_data = _model_data_str.format(
             item_name=item_name,
             base=("netherite" if material == "necromium" else "iron"),
             type=type,
@@ -134,7 +172,7 @@ def create_weapon_model_data(type: str, material: str):
     # Normal models
     model_file = open("assets/ccww/models/item/" + item_name + ".json", "w")
 
-    model_data = model_data_str.format(
+    model_data = _model_data_str.format(
         item_name=item_name,
         base=("netherite" if material == "necromium" else "iron"),
         type=type,

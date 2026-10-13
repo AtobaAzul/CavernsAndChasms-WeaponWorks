@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_katana"
+    "layer0": "ccww:item/necromium_katana",
+    "particle": "ccww:item/necromium_katana"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_katana_handheld",

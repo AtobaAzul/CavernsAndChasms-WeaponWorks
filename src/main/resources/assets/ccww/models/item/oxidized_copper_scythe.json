@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/oxidized_copper_scythe"
+    "layer0": "ccww:item/oxidized_copper_scythe",
+    "particle": "ccww:item/oxidized_copper_scythe"
   },
   "base": {
     "parent": "moonsweaponry:item/iron_scythe_handheld",

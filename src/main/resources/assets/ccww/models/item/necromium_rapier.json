@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_rapier"
+    "layer0": "ccww:item/necromium_rapier",
+    "particle": "ccww:item/necromium_rapier"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_rapier_handheld",

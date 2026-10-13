@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_halberd"
+    "layer0": "ccww:item/necromium_halberd",
+    "particle": "ccww:item/necromium_halberd"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_halberd_handheld",

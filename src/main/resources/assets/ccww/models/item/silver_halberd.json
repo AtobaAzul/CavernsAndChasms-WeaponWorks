@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/silver_halberd"
+    "layer0": "ccww:item/silver_halberd",
+    "particle": "ccww:item/silver_halberd"
   },
   "base": {
     "parent": "moonsweaponry:item/iron_halberd_handheld",

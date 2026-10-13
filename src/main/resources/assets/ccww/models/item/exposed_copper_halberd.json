@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/exposed_copper_halberd"
+    "layer0": "ccww:item/exposed_copper_halberd",
+    "particle": "ccww:item/exposed_copper_halberd"
   },
   "base": {
     "parent": "moonsweaponry:item/iron_halberd_handheld",

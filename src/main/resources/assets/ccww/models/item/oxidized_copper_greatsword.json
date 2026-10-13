@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/oxidized_copper_greatsword"
+    "layer0": "ccww:item/oxidized_copper_greatsword",
+    "particle": "ccww:item/oxidized_copper_greatsword"
   },
   "base": {
     "parent": "moonsweaponry:item/iron_greatsword_handheld",

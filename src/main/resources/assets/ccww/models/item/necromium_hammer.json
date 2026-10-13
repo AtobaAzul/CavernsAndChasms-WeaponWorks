@@ -2,12 +2,13 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_hammer"
+    "layer0": "ccww:item/necromium_hammer",
+    "particle": "ccww:item/necromium_hammer"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_hammer_handheld",
     "textures": {
-        "layer0": "ccww:item/necromium_hammer_handheld"
+        "0": "ccww:item/necromium_hammer_handheld"
     }
   },
   "perspectives": {

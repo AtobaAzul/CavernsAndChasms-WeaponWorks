@@ -2,12 +2,13 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/oxidized_copper_hammer"
+    "layer0": "ccww:item/oxidized_copper_hammer",
+    "particle": "ccww:item/oxidized_copper_hammer"
   },
   "base": {
     "parent": "ccww:item/copper_hammer_handheld",
     "textures": {
-        "layer0": "ccww:item/oxidized_copper_hammer_handheld"
+        "0": "ccww:item/oxidized_copper_hammer_handheld"
     }
   },
   "perspectives": {

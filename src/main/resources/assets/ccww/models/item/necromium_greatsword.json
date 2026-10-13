@@ -2,7 +2,8 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "textures": {
-    "layer0": "ccww:item/necromium_greatsword"
+    "layer0": "ccww:item/necromium_greatsword",
+    "particle": "ccww:item/necromium_greatsword"
   },
   "base": {
     "parent": "moonsweaponry:item/netherite_greatsword_handheld",
